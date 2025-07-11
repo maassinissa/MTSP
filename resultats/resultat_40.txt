@@ -1,0 +1,9 @@
+Étape 1 : E1 → P1
+Étape 2 : P1 → D4
+Étape 3 : D4 → D1
+Étape 4 : D1 → D3
+Étape 5 : D3 → P1
+Étape 6 : P1 → P2
+Étape 7 : P2 → D2
+Étape 8 : D2 → P2
+Étape 9 : P2 → S1

@@ -1,0 +1,5 @@
+Étape 1 : E5 → P1
+Étape 2 : P1 → D2
+Étape 3 : D2 → D1
+Étape 4 : D1 → P1
+Étape 5 : P1 → S3
