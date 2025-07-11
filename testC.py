@@ -38,10 +38,10 @@ def safe_sample(df, n, random_state=None):
     if len(df) >= n:
         return df.sample(n=n, random_state=random_state)
     elif len(df) > 0:
-        print(f"⚠️ Moins de {n} éléments trouvés pour échantillonnage, on prend tout ({len(df)}).")
+        print(f" Moins de {n} éléments trouvés pour échantillonnage, on prend tout ({len(df)}).")
         return df
     else:
-        print("❌ Aucun élément trouvé pour l'échantillonnage.")
+        print(" Aucun élément trouvé pour l'échantillonnage.")
         return pd.DataFrame(columns=df.columns)
 
 # === 5. Sélection des POIs ===
@@ -115,4 +115,4 @@ for i, j in itertools.product(D, P):
 # === 9. Sauvegarde ===
 positions.reset_index().to_csv("positions.csv", index=False)
 pd.DataFrame(arcs, columns=["Depart", "Arrivee", "Cout"]).to_csv("TEST.csv", index=False)
-print("✅ Fichiers 'positions.csv' et 'TEST.csv' générés.")
+print(" Fichiers 'positions.csv' et 'TEST.csv' générés.")
